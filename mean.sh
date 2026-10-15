@@ -32,3 +32,4 @@ cut -d ',' -f "$column" "$file" | tail -n +2 | {
         echo "scale=2; $sum / $count" | bc -l
     fi
 
+}

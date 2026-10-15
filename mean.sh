@@ -1,4 +1,4 @@
-#!/bin/bashs
+#!/bin/bash
 
 if [[ $# -lt 1 || $# -gt 2 ]]; then
     echo "usage: mean.sh <column> [file.csv]" 1>&2
@@ -32,3 +32,4 @@ cut -d ',' -f "$column" "$file" | tail -n +2 | {
         echo "scale=2; $sum / $count" | bc -l
     fi
 
+}

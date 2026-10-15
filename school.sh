@@ -8,8 +8,7 @@ cut -d ',' -f 7 |
 sum=0
 total=0
 
-while read value
-do
+while read value; do
   sum=$((sum + value))
   total=$((total + 1))
 done
